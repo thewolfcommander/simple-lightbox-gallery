@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+
+.gallery {
+  margin: 10px 50px;
+}
+
+.gallery img {
+  height: 40vh;
+  width: auto;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+@media screen and (max-width: 980px) and (min-width: 481px) {
+    .gallery img {
+        height: auto;
+        width: 45%;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery img {
+        height: auto;
+        width: 100%;
+      }
+}
+
+.gallery img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px white;
+}
